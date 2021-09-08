@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 options = webdriver.ChromeOptions() 
-options.add_argument("window-size=1280,800")
+options.add_argument("window-size=1600,900")
 options.add_argument('--disable-blink-features=AutomationControlled')
 browser  = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 browser.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
